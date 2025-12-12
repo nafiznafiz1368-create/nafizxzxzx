@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRT X/R1 |</title>
+    
+    
+    <style>
+        /* --- General Styling --- */
+        :root {
+            --primary-color: #6a5acd; /* Ungu Lavender */
+            --text-dark: #333;
+            --text-light: #555;
+            --bg-light: #fdfdfd;
+            --bg-accent: #f0f0f0;
+            --shadow-light: rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 5%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* --- Header Section --- */
+        .hero-header {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1080/1600/600') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+        }
+        .hero-header h1 {
+            font-size: 4em;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .hero-header p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+
+        /* --- Intro Message --- */
+        .intro-message {
+            background-color: var(--bg-accent);
+            padding: 50px 5%;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .intro-message h2 {
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+        .intro-message p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- Gallery Section (Masonry-like) --- */
+        .gallery-container {
+            column-count: 3; /* Jumlah kolom galeri */
+            column-gap: 20px;
+            padding: 40px 0;
+        }
+        .gallery-item {
+            margin-bottom: 20px;
+            break-inside: avoid; /* Mencegah item terpotong antar kolom */
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px var(--shadow-light);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+        .gallery-item .caption {
+            padding: 15px;
+            font-size: 0.9em;
+            color: var(--text-light);
+        }
+        .gallery-item .caption strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        /* Responsiveness for Gallery */
+        @media (max-width: 992px) {
+            .gallery-container {
+                column-count: 2;
+            }
+            .hero-header h1 {
+                font-size: 3em;
+            }
+        }
+        @media (max-width: 768px) {
+            .gallery-container {
+                column-count: 1;
+            }
+            .hero-header h1 {
+                font-size: 2.5em;
+            }
+            .hero-header p {
+                font-size: 1em;
+            }
+        }
+
+        /* --- Closing Message --- */
+        .closing-message {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .closing-message h2 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .closing-message p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--text-dark);
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-header">
+        <h1>X\RUANG 1|</h1>
+        <p>Selamat datang di halaman web kelas kami</p>
+    </section>
+
+    <section class="intro-message">
+        <h2>"Setiap Detik adalah Karya Seni"</h2>
+        <p>Dari ide-ide brilian hingga tawa yang mengisi ruangan, setiap momen di kelas ini telah membentuk kita menjadi seniman dan pemikir yang lebih baik. Mari kita rayakan kebersamaan ini melalui lensa waktu.</p>
+    </section>
+
+    <section class="gallery-section">
+        <h2 style="margin-bottom: 60px;">Kilasan Momen Berharga||</h2>
+        <div class="gallery-container">
+            
+            <div class="gallery-item">
+                <img src="kelasss.jpg" alt="Momen Diskusi Kelas" loading="lazy">
+                <div class="caption">
+                    <strong>Diskusi Intens</strong>
+                    <span>hari guru internasional 25 november 2025</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kelass.jpg" alt="Proyek Kelompok" loading="lazy">
+                <div class="caption">
+                    <strong>kelas pramuka</strong>
+                    <span>Kolaborasi adalah kunci, dan ini adalah bukti nyatanya.</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kelazz.jpg" alt="Potret Individu Kelas" loading="lazy">
+                <div class="caption">
+                    <strong>Senyummu, Semangat Kami</strong>
+                    <span>Wajah-wajah penuh semangat yang tak akan terlupakan.</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kelaszxzxxx.jpg" alt="Suasana Studio Kreatif" loading="lazy">
+                <div class="caption">
+                    <strong>Di Balik Layar</strong>
+                    <span>Kesibukan dan fokus dalam menciptakan karya.</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="IMG-20251206-WA0144.jpg" alt="Outing Kelas" loading="lazy">
+                <div class="caption">
+                    <strong>Petualangan Bersama</strong>
+                    <span>Momen-momen di luar kelas yang penuh inspirasi.</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="zzzzzz.jpg" alt="Sesi Feedback" loading="lazy">
+                <div class="caption">
+                    <strong>Tumbuh Bersama</strong>
+                    <span>Belajar dari satu sama lain adalah bagian dari perjalanan.</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kelaszxz.jpg" alt="Momen Keakraban" loading="lazy">
+                <div class="caption">
+                    <strong>Keluarga Kelas</strong>
+                    <span>Lebih dari sekadar teman, kita adalah keluarga.</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kelasz.jpg" alt="Presentasi Akhir" loading="lazy">
+                <div class="caption">
+                    <strong>Puncak Kreasi</strong>
+                    <span>Bangga akan hasil yang telah kita raih bersama.</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="kelasss.jpg" alt="Perayaan Kecil" loading="lazy">
+                <div class="caption">
+                    <strong>Perayaan Kecil</strong>
+                    <span>Momen-momen manis yang menghiasi hari-hari kita.</span>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <section class="closing-message">
+        <h2>Terima Kasih Atas Kenangan Indah Ini</h2>
+        <p>Semoga persahabatan dan inspirasi yang kita bangun akan terus bersemi. Sampai jumpa lagi, para kreator hebat!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SRT  [55 KOTAWARINGIN_TIMUR]. Dibuat dengan cinta dan kenangan.</p>
+        <p><a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">Facebook</a></p>
+    </footer>
+
+</body>
+</html>
